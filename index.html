@@ -14,26 +14,38 @@
   </head>
 
   <body>
-    <div class="all-container">
-      <header>
-        <div class="link-header-profile">
-          <a class="link-header" href="#">HOLA</a>
-          <a class="link-header" href="#">PROYECTOS</a>
-          <a class="link-header" href="#">HABLEMOS</a>
-          <button class="desc-button">Descargar Curriculum</button>
+    <div class="container">
+      <nav class="navbar display-flex-center">
+        <h1 class="logo bold">LOGO</h1>
+        <ul class="navbar-nav">
+          <li class="active">
+            <a href="#">HOLA</a>
+          </li>
+          <li>
+            <a href="#">PROYECTOS</a>
+          </li>
+          <li>
+            <a href="#">HABLEMOS</a>
+          </li>
+        </ul>
+        <div>
+          <button type="button" class="btn btn-download">
+            DESCARGAR CURRICULUM
+          </button>
         </div>
-        <section class="first-container-profile">
-          <div class="container-profile">
-            <h3 class="subtitle">Hola a todos!</h3>
-            <h1 class="title">Soy Elisa</h1>
+      </nav>
 
-            <p class="text-profile">
-              Una Frontend Developer que le encanta implementar diseños <br />
-              que inspiran y atraen a las personas.
+      <main>
+        <section class="hero display-flex-center">
+          <div class="hero-text">
+            <h2>Hola a todos!</h2>
+            <h1 class="mb-1">Soy Elisa</h1>
+            <p class="mb-1">
+              Una Frontend Developer que le encanta implementar diseños que
+              inspiran y atraen a las personas.
             </p>
-
-            <div class="btn-btn-profile">
-              <button class="btn-primary">
+            <div class="">
+              <button class="btn btn-icon mr-1">
                 <svg
                   width="24"
                   height="24"
@@ -47,7 +59,7 @@
                   />
                 </svg>
               </button>
-              <button class="btn-primary">
+              <button class="btn btn-icon mr-1">
                 <svg
                   width="24"
                   height="24"
@@ -61,7 +73,7 @@
                   />
                 </svg>
               </button>
-              <button class="btn-primary">
+              <button class="btn btn-icon mr-1">
                 <svg
                   width="24"
                   height="24"
@@ -75,7 +87,7 @@
                   />
                 </svg>
               </button>
-              <button class="btn-primary">
+              <button class="btn btn-icon mr-1">
                 <svg
                   width="24"
                   height="24"
@@ -91,205 +103,269 @@
               </button>
             </div>
           </div>
+
           <div>
-            <img class="img" src="./icons/person.png" alt="" />
+            <img class="img-fluid" src="./icons/person.png" alt="elisa" />
           </div>
         </section>
-      </header>
 
-      <main>
-        <section>
-          <p class="text-main">
-            A lo largo de mi carrera como Frontend, he tenido el <br />
-            privilegio de trabajar en proyectos retadores e increíbles
+        <section class="section-2 mb-2">
+          <p class="section-2-p1">
+            A lo largo de mi carrera como Frontend, he tenido el privilegio de
+            trabajar en proyectos retadores e increíbles
           </p>
-          <p class="text-main-secondary">
+          <p class="section-2-p2 bold">
             Aquí hay algunos que me gustaría compartir.
           </p>
-          <div class="arrow">
-            <img src="./icons/arrow-down.png" alt="" />
+          <div>
+            <img src="/icons/arrow-down.png" alt="arrow" />
           </div>
         </section>
 
-        <section class="proyecto-uno">
-          <div class="text-proyecto-uno">
-            <h2>Leonidasesteban.com</h2>
-            <p>
-              Accede a más de 120 proyectos que te ayudarán a mejorar <br />
-              tus habilidades como desarrollador Front-End.
+        <section class="projects display-flex-section mb-3 mt-1">
+          <div>
+            <h2 class="project-name fit-content">leonidasesteban.com</h2>
+            <p class="project-text">
+              Accede a más de 120 proyectos que te ayudarán a mejorar tus
+              habilidades como desarrollador Front-End.
             </p>
-            <button class="btn-main-primary">Ver Proyecto</button>
-            <button class="btn-main-secondary">Ver Código</button>
+            <div class="projects-buttons d-flex">
+              <button type="button" class="btn btn-download mr-1">
+                VER PROYECTO
+              </button>
+              <button type="button" class="btn btn-github">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4459 1.03508C5.03757 1.51425 1.49174 5.06008 1.01257 9.37258C0.533403 13.8767 3.1209 17.9017 7.05007 19.4351C7.33757 19.5309 7.62507 19.3392 7.62507 18.9559V17.4226C7.62507 17.4226 7.24174 17.5184 6.76257 17.5184C5.4209 17.5184 4.8459 16.3684 4.75007 15.6976C4.65424 15.3142 4.46257 15.0267 4.17507 14.7392C3.88757 14.6434 3.79174 14.6434 3.79174 14.5476C3.79174 14.3559 4.07924 14.3559 4.17507 14.3559C4.75007 14.3559 5.22924 15.0267 5.4209 15.3142C5.90007 16.0809 6.47507 16.2726 6.76257 16.2726C7.1459 16.2726 7.4334 16.1767 7.62507 16.0809C7.7209 15.4101 8.0084 14.7392 8.5834 14.3559C6.37924 13.8767 4.75007 12.6309 4.75007 10.5226C4.75007 9.46842 5.22924 8.41425 5.90007 7.64758C5.80424 7.45591 5.7084 6.97675 5.7084 6.30591C5.7084 5.92258 5.7084 5.34758 5.9959 4.77258C5.9959 4.77258 7.33757 4.77258 8.67924 6.01841C9.1584 5.82675 9.82924 5.73092 10.5001 5.73092C11.1709 5.73092 11.8417 5.82675 12.4167 6.01841C13.6626 4.77258 15.1001 4.77258 15.1001 4.77258C15.2917 5.34758 15.2917 5.92258 15.2917 6.30591C15.2917 7.07258 15.1959 7.45591 15.1001 7.64758C15.7709 8.41425 16.2501 9.37258 16.2501 10.5226C16.2501 12.6309 14.6209 13.8767 12.4167 14.3559C12.9917 14.8351 13.3751 15.6976 13.3751 16.5601V19.0517C13.3751 19.3392 13.6626 19.6267 14.0459 19.5309C17.5917 18.0934 20.0834 14.6434 20.0834 10.6184C20.0834 4.86842 15.1959 0.364248 9.4459 1.03508Z"
+                    fill="#0F0A0A"
+                  />
+                </svg>
+                VER CODIGO
+              </button>
+            </div>
           </div>
-
-          <div class="img-proyecto-uno">
-            <img src="./icons/💻  Macbook.png" alt="" />
+          <div>
+            <img class="img-fluid" src="./icons/💻  Macbook.png" alt="" />
           </div>
         </section>
 
-        <section class="card-container">
-          <div class="card">
-            <img class="img-card" src="icons/user.png" alt="" />
-
-            <p class="texts-card">
-              "Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de
-              desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5
-              meses ".
-            </p>
-            <p class="subtexts-card">
-              LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM
-            </p>
+        <section class="card-section mb-5 mt-1">
+          <div class="card-section-img">
+            <img class="img-fluid" src="./icons/user.png" alt="user" />
           </div>
+          <h2 class="card-section-title">
+            "Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de
+            desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5
+            meses ".
+          </h2>
+          <h3 class="card-section-subtitle">
+            LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM
+          </h3>
         </section>
 
-        <section class="proyecto-dos">
-          <div class="img-proyecto-dos">
-            <img src="icons/📱 iPad.png" alt="" />
-          </div>
-
-          <div class="text-proyecto-dos">
-            <h2>Marvol</h2>
-            <p>
-              Es el sitio oficial de Marvol Entertainment. Explore películas,<br />
-              personajes, cómics, programas de televisión, videos y más <br />
+        <section class="projects display-flex-section mb-3 marvol mt-1">
+          <div>
+            <h2 class="project-name fit-content">MARVOL</h2>
+            <p class="project-text">
+              Es el sitio oficial de Marvol Entertainment. Explore películas,
+              personajes, cómics, programas de televisión, videos y más
               oficiales de Marvol.
             </p>
-            <button class="btn-main-primary">Ver Proyecto</button>
-            <button class="btn-main-secondary">Ver Código</button>
+            <div class="projects-buttons d-flex">
+              <button type="button" class="btn btn-download mr-1">
+                VER PROYECTO
+              </button>
+              <button type="button" class="btn btn-github">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4459 1.03508C5.03757 1.51425 1.49174 5.06008 1.01257 9.37258C0.533403 13.8767 3.1209 17.9017 7.05007 19.4351C7.33757 19.5309 7.62507 19.3392 7.62507 18.9559V17.4226C7.62507 17.4226 7.24174 17.5184 6.76257 17.5184C5.4209 17.5184 4.8459 16.3684 4.75007 15.6976C4.65424 15.3142 4.46257 15.0267 4.17507 14.7392C3.88757 14.6434 3.79174 14.6434 3.79174 14.5476C3.79174 14.3559 4.07924 14.3559 4.17507 14.3559C4.75007 14.3559 5.22924 15.0267 5.4209 15.3142C5.90007 16.0809 6.47507 16.2726 6.76257 16.2726C7.1459 16.2726 7.4334 16.1767 7.62507 16.0809C7.7209 15.4101 8.0084 14.7392 8.5834 14.3559C6.37924 13.8767 4.75007 12.6309 4.75007 10.5226C4.75007 9.46842 5.22924 8.41425 5.90007 7.64758C5.80424 7.45591 5.7084 6.97675 5.7084 6.30591C5.7084 5.92258 5.7084 5.34758 5.9959 4.77258C5.9959 4.77258 7.33757 4.77258 8.67924 6.01841C9.1584 5.82675 9.82924 5.73092 10.5001 5.73092C11.1709 5.73092 11.8417 5.82675 12.4167 6.01841C13.6626 4.77258 15.1001 4.77258 15.1001 4.77258C15.2917 5.34758 15.2917 5.92258 15.2917 6.30591C15.2917 7.07258 15.1959 7.45591 15.1001 7.64758C15.7709 8.41425 16.2501 9.37258 16.2501 10.5226C16.2501 12.6309 14.6209 13.8767 12.4167 14.3559C12.9917 14.8351 13.3751 15.6976 13.3751 16.5601V19.0517C13.3751 19.3392 13.6626 19.6267 14.0459 19.5309C17.5917 18.0934 20.0834 14.6434 20.0834 10.6184C20.0834 4.86842 15.1959 0.364248 9.4459 1.03508Z"
+                    fill="#0F0A0A"
+                  />
+                </svg>
+                VER CODIGO
+              </button>
+            </div>
+          </div>
+          <div>
+            <img class="img-fluid" src="./icons/📱 iPad.png" alt="" />
           </div>
         </section>
 
-        <section class="card-container-dos">
-          <div class="card-dos">
-            <img class="img-card" src="icons/user (1).png" alt="" />
+        <section class="card-section mb-5 mt-1">
+          <div class="card-section-img">
+            <img class="img-fluid" src="./icons/user (1).png" alt="user" />
+          </div>
+          <h2 class="card-section-title">
+            "Elisa ha superado mis expectativas desde el diseño hasta el
+            desarrollo".
+          </h2>
+          <h3 class="card-section-subtitle">
+            JASON LOPEZ / COFUNDADOR Y CEO MARVOL
+          </h3>
+        </section>
 
-            <p class="texts-card">
-              "Elisa ha superado mis expectativas desde el diseño hasta el
-              desarrollo".
+        <section class="projects display-flex-section mb-3 mt-1">
+          <div>
+            <h2 class="project-name fit-content">NETNET</h2>
+            <p class="project-text">
+              Películas y series ilimitadas y mucho más. Disfruta donde quieras.
+              Cancela cuando quieras.
             </p>
-            <p class="subtexts-card">JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
+            <div class="projects-buttons d-flex">
+              <button type="button" class="btn btn-download mr-1">
+                VER PROYECTO
+              </button>
+              <button type="button" class="btn btn-github">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4459 1.03508C5.03757 1.51425 1.49174 5.06008 1.01257 9.37258C0.533403 13.8767 3.1209 17.9017 7.05007 19.4351C7.33757 19.5309 7.62507 19.3392 7.62507 18.9559V17.4226C7.62507 17.4226 7.24174 17.5184 6.76257 17.5184C5.4209 17.5184 4.8459 16.3684 4.75007 15.6976C4.65424 15.3142 4.46257 15.0267 4.17507 14.7392C3.88757 14.6434 3.79174 14.6434 3.79174 14.5476C3.79174 14.3559 4.07924 14.3559 4.17507 14.3559C4.75007 14.3559 5.22924 15.0267 5.4209 15.3142C5.90007 16.0809 6.47507 16.2726 6.76257 16.2726C7.1459 16.2726 7.4334 16.1767 7.62507 16.0809C7.7209 15.4101 8.0084 14.7392 8.5834 14.3559C6.37924 13.8767 4.75007 12.6309 4.75007 10.5226C4.75007 9.46842 5.22924 8.41425 5.90007 7.64758C5.80424 7.45591 5.7084 6.97675 5.7084 6.30591C5.7084 5.92258 5.7084 5.34758 5.9959 4.77258C5.9959 4.77258 7.33757 4.77258 8.67924 6.01841C9.1584 5.82675 9.82924 5.73092 10.5001 5.73092C11.1709 5.73092 11.8417 5.82675 12.4167 6.01841C13.6626 4.77258 15.1001 4.77258 15.1001 4.77258C15.2917 5.34758 15.2917 5.92258 15.2917 6.30591C15.2917 7.07258 15.1959 7.45591 15.1001 7.64758C15.7709 8.41425 16.2501 9.37258 16.2501 10.5226C16.2501 12.6309 14.6209 13.8767 12.4167 14.3559C12.9917 14.8351 13.3751 15.6976 13.3751 16.5601V19.0517C13.3751 19.3392 13.6626 19.6267 14.0459 19.5309C17.5917 18.0934 20.0834 14.6434 20.0834 10.6184C20.0834 4.86842 15.1959 0.364248 9.4459 1.03508Z"
+                    fill="#0F0A0A"
+                  />
+                </svg>
+                VER CODIGO
+              </button>
+            </div>
+          </div>
+          <div>
+            <img class="img-fluid" src="./icons/📱 Iphone X.png" alt="" />
           </div>
         </section>
 
-        <section class="proyecto-tres">
-          <div class="text-proyecto-tres">
-            <h2>NETNET</h2>
-            <p>
-              Películas y series ilimitadas y mucho más. <br />
-              Disfruta donde quieras. Cancela cuando quieras.
-            </p>
-            <button class="btn-main-primary">Ver Proyecto</button>
-            <button class="btn-main-secondary">Ver Código</button>
+        <section class="card-section mb-5 mt-1">
+          <div class="card-section-img">
+            <img class="img-fluid" src="./icons/user (2).png" alt="user" />
           </div>
-
-          <div class="img-proyecto-tres">
-            <img src="./icons/📱 Iphone X.png" alt="" />
-          </div>
+          <h2 class="card-section-title">
+            "Por primera vez en la historia de nuestra empresa, aparecimos en
+            todas las plataformas en las que trabajamos".
+          </h2>
+          <h3 class="card-section-subtitle">MARCO CORTEZ / NETNET</h3>
         </section>
 
-        <section class="card-container-tres">
-          <div class="card-tres">
-            <img class="img-card" src="icons/user (2).png" alt="" />
-
-            <p class="texts-card">
-              "Por primera vez en la historia de nuestra empresa, aparecimos en
-              todas las plataformas en las que trabajamos".
-            </p>
-            <p class="subtexts-card">MARCO CORTEZ / NETNET</p>
-          </div>
-        </section>
-
-        <section class="form-container">
-          <h2 class="form-title">HABLEMOS</h2>
-
-          <p class="form-subtitle">
+        <section class="form-section mb-5 mt-1">
+          <h2 class="project-name text-center">HABLEMOS</h2>
+          <p class="project-text text-center mb-2">
             Si está interesado en trabajar conmigo en su próximo proyecto, no
-            dude <br />
-            en ponerse en contacto conmigo.
+            dude en ponerse en contacto conmigo.
           </p>
 
-          <div class="input">
-            <p class="input-text">Nombre completo</p>
-            <input class="form-input" type="text" />
-          </div>
-          <div class="input">
-            <p class="input-text">Correo electrónico</p>
-            <input class="form-input" type="text" />
-          </div>
-          <div class="input">
-            <p class="input-text">Mensaje</p>
-            <input class="form-input-coments" type="text" />
-          </div>
+          <form>
+            <div class="form-control">
+              <label for="fullName">Nombre completo</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="Juan"
+              />
+            </div>
 
-          <button class="form-btn-btn-primary">Enviar Mensaje</button>
+            <div class="form-control">
+              <label for="email">Correo electronico</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="juan@gmail.com"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="message">Mensaje</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-download w-100">
+              ENVIAR MENSAJE
+            </button>
+          </form>
         </section>
       </main>
 
-      <footer>
-        <div class="footer-container">
-          <p class="text-footer">
-            Hecho con <img src="./icons/icon-heart_outline.png" alt="" />de
-            Elisa. Copyright 2021 - Todos los derechos reservados.
-          </p>
-
-          <div class="btn-btn-profile">
-            <button class="btn-primary">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.023 15.488C19.393 15.473 18.6 15.436 18.099 15.348C17.557 15.252 16.905 15.066 16.446 14.923C16.086 14.811 15.694 14.91 15.427 15.176L13.21 17.38C11.678 16.573 10.451 15.633 9.412 14.588C8.367 13.549 7.427 12.322 6.62 10.79L8.824 8.572C9.09 8.305 9.189 7.913 9.077 7.553C8.935 7.095 8.748 6.443 8.653 5.901C8.564 5.4 8.528 4.607 8.512 3.977C8.499 3.432 8.055 3 7.51 3H4C3.562 3 3 3.328 3 4C3 8.539 4.84 12.874 7.966 16.034C11.126 19.16 15.461 21 20 21C20.672 21 21 20.438 21 20V16.49C21 15.945 20.568 15.501 20.023 15.488Z"
-                  fill="#0F0A0A"
-                />
-              </svg>
-            </button>
-            <button class="btn-primary">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 4C3.07 4 2.29231 4.64291 2.07031 5.50391L12 11.7266L21.9355 5.52148C21.7195 4.65048 20.937 4 20 4H4ZM2 7.73438V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V7.75586L12 14L2 7.73438Z"
-                  fill="#0F0A0A"
-                />
-              </svg>
-            </button>
-            <button class="btn-primary">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 3C5.239 3 3 5.239 3 8V16C3 18.761 5.239 21 8 21H16C18.761 21 21 18.761 21 16V8C21 5.239 18.761 3 16 3H8ZM18 5C18.552 5 19 5.448 19 6C19 6.552 18.552 7 18 7C17.448 7 17 6.552 17 6C17 5.448 17.448 5 18 5ZM12 7C14.761 7 17 9.239 17 12C17 14.761 14.761 17 12 17C9.239 17 7 14.761 7 12C7 9.239 9.239 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
-                  fill="#0F0A0A"
-                />
-              </svg>
-            </button>
-            <button class="btn-primary">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22 3.99899C21.22 4.46199 19.655 5.09299 18.735 5.27499C18.708 5.28199 18.686 5.29099 18.66 5.29799C17.847 4.49599 16.733 3.99899 15.5 3.99899C13.015 3.99899 11 6.01399 11 8.49899C11 8.62999 10.989 8.87099 11 8.99899C7.647 8.99899 5.095 7.24299 3.265 4.99899C3.066 5.49899 2.979 6.28899 2.979 7.03099C2.979 8.43199 4.074 9.80799 5.779 10.661C5.465 10.742 5.119 10.8 4.759 10.8C4.178 10.8 3.563 10.647 3 10.183C3 10.2 3 10.216 3 10.234C3 12.192 5.078 13.525 6.926 13.896C6.551 14.117 5.795 14.139 5.426 14.139C5.166 14.139 4.246 14.02 4 13.974C4.514 15.579 6.368 16.481 8.135 16.513C6.753 17.597 5.794 17.999 2.964 17.999H2C3.788 19.145 6.065 20 8.347 20C15.777 20 20 14.337 20 8.99899C20 8.91299 19.998 8.73299 19.995 8.55199C19.995 8.53399 20 8.51699 20 8.49899C20 8.47199 19.992 8.44599 19.992 8.41899C19.989 8.28299 19.986 8.15599 19.983 8.08999C20.773 7.51999 21.458 6.80899 22 5.99899C21.275 6.32099 20.497 6.53699 19.68 6.63499C20.514 6.13499 21.699 4.94299 22 3.99899Z"
-                  fill="#0F0A0A"
-                />
-              </svg>
-            </button>
-          </div>
+      <footer class="display-flex-center mb-3">
+        <h1 class="logo">LOGO</h1>
+        <div class="footer-text">
+          Hecho con .. de Elisa. Copyright 2021 - Todos los derechos reservados.
+        </div>
+        <div class="footer-icons">
+          <button class="btn btn-icon mr-1">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.023 15.488C19.393 15.473 18.6 15.436 18.099 15.348C17.557 15.252 16.905 15.066 16.446 14.923C16.086 14.811 15.694 14.91 15.427 15.176L13.21 17.38C11.678 16.573 10.451 15.633 9.412 14.588C8.367 13.549 7.427 12.322 6.62 10.79L8.824 8.572C9.09 8.305 9.189 7.913 9.077 7.553C8.935 7.095 8.748 6.443 8.653 5.901C8.564 5.4 8.528 4.607 8.512 3.977C8.499 3.432 8.055 3 7.51 3H4C3.562 3 3 3.328 3 4C3 8.539 4.84 12.874 7.966 16.034C11.126 19.16 15.461 21 20 21C20.672 21 21 20.438 21 20V16.49C21 15.945 20.568 15.501 20.023 15.488Z"
+                fill="#0F0A0A"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-icon mr-1">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4C3.07 4 2.29231 4.64291 2.07031 5.50391L12 11.7266L21.9355 5.52148C21.7195 4.65048 20.937 4 20 4H4ZM2 7.73438V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V7.75586L12 14L2 7.73438Z"
+                fill="#0F0A0A"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-icon mr-1">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 3C5.239 3 3 5.239 3 8V16C3 18.761 5.239 21 8 21H16C18.761 21 21 18.761 21 16V8C21 5.239 18.761 3 16 3H8ZM18 5C18.552 5 19 5.448 19 6C19 6.552 18.552 7 18 7C17.448 7 17 6.552 17 6C17 5.448 17.448 5 18 5ZM12 7C14.761 7 17 9.239 17 12C17 14.761 14.761 17 12 17C9.239 17 7 14.761 7 12C7 9.239 9.239 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                fill="#0F0A0A"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 3.99899C21.22 4.46199 19.655 5.09299 18.735 5.27499C18.708 5.28199 18.686 5.29099 18.66 5.29799C17.847 4.49599 16.733 3.99899 15.5 3.99899C13.015 3.99899 11 6.01399 11 8.49899C11 8.62999 10.989 8.87099 11 8.99899C7.647 8.99899 5.095 7.24299 3.265 4.99899C3.066 5.49899 2.979 6.28899 2.979 7.03099C2.979 8.43199 4.074 9.80799 5.779 10.661C5.465 10.742 5.119 10.8 4.759 10.8C4.178 10.8 3.563 10.647 3 10.183C3 10.2 3 10.216 3 10.234C3 12.192 5.078 13.525 6.926 13.896C6.551 14.117 5.795 14.139 5.426 14.139C5.166 14.139 4.246 14.02 4 13.974C4.514 15.579 6.368 16.481 8.135 16.513C6.753 17.597 5.794 17.999 2.964 17.999H2C3.788 19.145 6.065 20 8.347 20C15.777 20 20 14.337 20 8.99899C20 8.91299 19.998 8.73299 19.995 8.55199C19.995 8.53399 20 8.51699 20 8.49899C20 8.47199 19.992 8.44599 19.992 8.41899C19.989 8.28299 19.986 8.15599 19.983 8.08999C20.773 7.51999 21.458 6.80899 22 5.99899C21.275 6.32099 20.497 6.53699 19.68 6.63499C20.514 6.13499 21.699 4.94299 22 3.99899Z"
+                fill="#0F0A0A"
+              />
+            </svg>
+          </button>
         </div>
       </footer>
     </div>
